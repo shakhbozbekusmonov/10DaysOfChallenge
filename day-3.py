@@ -181,3 +181,23 @@ def de_front(str):
     if str[0] == "b":
         return str[0] + str[1]
     return str
+
+
+def start_word(str, start):
+    if str[0] == start:
+        return str
+    return start + str
+
+
+def without_x(str):
+    if str[0] == "x":
+        return str[1:]
+    return str
+
+
+def without_x2(str):
+    if str[0] == "x" and str[1] == "x":
+        return str[2:]
+    if str[0] == "x":
+        return str[1:]
+    return str
